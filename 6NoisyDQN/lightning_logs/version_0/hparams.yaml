@@ -1,0 +1,18 @@
+a_end: 0.0
+a_last_episode: 1200
+a_start: 0.5
+b_end: 1
+b_last_episode: 1200
+b_start: 0.4
+batch_size: 256
+capacity: 100000
+env_name: Catcher-v0
+gamma: 0.99
+hidden_size: 512
+loss_fn: !!python/name:torch.nn.functional.smooth_l1_loss ''
+lr: 0.0005
+optim: !!python/name:torch.optim.adamw.AdamW ''
+policy: !!python/name:__main__.greedy ''
+samples_per_epoch: 1000
+sigma: 0.5
+sync_rate: 10
